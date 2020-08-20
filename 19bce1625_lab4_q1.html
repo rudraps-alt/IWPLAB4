@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin-top: 180px;
+            margin-left: 500px;
+            transform-origin: 200% center;
+            position: relative;
+            animation: rotate 2s linear infinite;
+        }
+
+        div:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            animation: rotate 1s linear infinite;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="https://www.pngitem.com/pimgs/m/4-45791_black-and-white-tire-clipart-transparent-background-hd.png"
+            alt="" width="200px"></div>
+</body>
+
+</html>
